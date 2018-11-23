@@ -319,7 +319,7 @@ iframe
 
 .fa-shopping-cart:hover 
 {
-	text-shadow: 0px 0px 6px;
+	text-shadow: 0px 0px 6px white;
 }
 
 #tportal 
@@ -336,7 +336,14 @@ iframe
 #camisa 
 {
   width: 100%;
-  height: 100%
+  height: 100%;
+  transition: all ease-out .2s
+}
+
+#camisa:hover 
+{
+  background-color: #222222;
+  transition: all ease-in .2s;
 }
 
 #textocompre 
@@ -362,4 +369,36 @@ iframe
   background-color: #A10D0D;
   transition: all .3s ease-in;
   color: white;
+}
+
+/**/
+
+.fa-users:hover 
+{
+  text-shadow: 0px 0px 6px white;
+}
+
+.fab 
+{
+  transition: all ease-out .1s
+}
+
+.fab:hover 
+{
+  transition: all ease-in .1s;
+  color:#A10D0D;
+}
+
+/*Player*/
+
+.container-audio {
+    width: 100%;
+    height: auto;
+    background-color: #222222;
+    color: #222222;
+    overflow: hidden;
+}
+audio {
+  width:100%;
+  background-color: #222222
 }
