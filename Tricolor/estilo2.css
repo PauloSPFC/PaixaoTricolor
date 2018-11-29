@@ -146,15 +146,18 @@ video
   overflow: hidden;
 }
 
-.title-img h3{margin: 0 0 10px 0;}
-.title-img span:first-of-type{font-weight: bold}
+.title-img h3{margin: 0 0 10px 0;font-family:'Chakra Petch',sans serif;text-shadow: 2px 1px 6px black;}
+.title-img span
+{
+  font-family:'Chakra Petch',sans serif;
+}
 
 .title-img{
   display:flex;
   flex-direction: column;
   color:#fff;
   padding: 25px 20px;
-  font-family: sans-serif;
+  font-family: Chakra Petch,sans-serif;
   position:absolute;
   top:245px;
   width:100%
@@ -177,7 +180,6 @@ video
   height:100%;
   color: transparent;
   font-size:2.5em;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,7 +195,6 @@ video
   width:40%;
   height:auto;
   font-size:2.5em;
-  font-weight: bold;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -210,7 +211,6 @@ video
   width:40%;
   height:auto;
   font-size:2.5em;
-  font-weight: bold;
   display: flex;
   align-items: right;
   justify-content: right;
@@ -227,7 +227,6 @@ video
   width:30%;
   height:auto;
   font-size:2.5em;
-  font-weight: bold;
   display: flex;
   align-items: right;
   justify-content: right;
@@ -245,7 +244,6 @@ background-color:transparent;
   width:30%;
   height:auto;
   font-size:2.5em;
-  font-weight: bold;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -258,7 +256,7 @@ background-color:transparent;
 
 .content-img:hover .title-img,
 .content-img:hover .bg-title{
-   top:170px;
+   top:165px;
    transition: all .3s ease-out;
    background-color: #222222
 }
@@ -443,7 +441,6 @@ audio {
 
 #contnoticia 
 {
-  animation: chnge-background 2s ease infinite;
   background: #a10d0d;
 }
 
@@ -514,7 +511,7 @@ audio {
   flex-direction: column;
   color:#fff;
   padding: 25px 20px;
-  font-family: sans-serif;
+  font-family: oswald sans-serif;
   position:absolute;
   top:245px;
   width:100%
@@ -632,4 +629,79 @@ background-color:transparent;
 
 .sinal, .titulo, .fototitulo {
   transition: all .3s ease-out;
+}
+
+/*Titulos*/
+
+.conteudo{
+  float: left;
+  position:relative;
+  width: 1400vw;
+  height: 650px;
+  overflow: hidden;
+  bottom: 75px;
+  transition: all .3s ease-out;
+}
+
+.imagem h1{margin-top:-24px;padding-bottom: 31px}
+.imagem span:first-of-type{font-weight: bold}
+
+.imagem{
+  display:flex;
+  flex-direction: column;
+  color:#fff;
+  padding: 25px 20px;
+  font-family: Chakra Petch, sans-serif;
+  position:absolute;
+  top:250px;
+  width:100%;
+  transition: all .3s ease-out;
+  margin-top: 200px;
+}
+
+.titulo{
+  background-color:#a10d0d;
+  position:absolute;
+  top:250px;
+  width:1400vw;
+  height: 90px;
+  transition: all .3s ease-out;
+  margin-top: 200px;
+}
+
+
+.conteudo:hover .imagem,
+.conteudo:hover .titulo{
+   top:185px;
+   height:500px;
+   transition: all .4s ease-in;
+}
+
+.imagem2{
+  display:flex;
+  flex-direction: column;
+  color:#fff;
+  padding: 25px 20px;
+  font-family: Chakra Petch, sans-serif;
+  position:absolute;
+  top:250px;
+  width:100%;
+  transition: all .3s ease-out;
+  margin-top: 175px;
+}
+.titulo2{
+  background-color:#a10d0d;
+  position:absolute;
+  top:250px;
+  width:1400vw;
+  height: 90px;
+  transition: all .3s ease-out;
+  margin-top: 200px;
+}
+
+.conteudo:hover .imagem2,
+.conteudo:hover .titulo2{
+   top:115px;
+   height:500px;
+   transition: all .4s ease-in;
 }
