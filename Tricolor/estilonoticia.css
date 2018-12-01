@@ -1,0 +1,95 @@
+.container h1 
+{
+	padding-top: 20px;
+	font-family: "Oswald";
+	font-size: 30px;
+	color: black;
+  	-webkit-text-fill-color: white;
+}
+
+.container a 
+{
+  text-decoration: none;
+}
+
+.row a 
+{
+  text-decoration: none
+}
+
+#noticia 
+{
+  transition: all ease-out .2s;
+  animation: blink2 .8s step-end infinite forwards;
+}
+
+#noticia:hover
+{
+  transition: all ease-in .2s;
+  text-shadow: 0px 0px 3px white
+}
+
+@keyframes blink2 {
+  0% {
+    animation: fade 1000ms infinite;
+  }
+  50% {
+    animation: fade 1000ms infinite;
+    transition: all ease-in .2s;
+    padding-left: 2.7vw;;
+  }
+  100% {
+    animation: fade 1000ms infinite;
+  }
+}
+#noticiass h2 
+ {
+  color:#f1f1f1;
+  transition: all ease-out .2s
+ }
+
+#noticiass h2:hover 
+ {
+  color:#c91212;
+  transition: all ease-in .2s
+ }
+
+ input[type="text"], textarea {
+
+  background-color : #d1d1d1;
+  border: solid 1px #939292
+
+}
+
+.btn-sm 
+{
+  border: solid 1px #a10d0d;
+  background-color: #f1f1f1;
+  font-family: Oswald;
+  font-weight: bold;
+  word-spacing: 1px
+}
+
+.btn-sm:hover 
+{
+  background-color:#222222;
+  color:#f1f1f1;
+}
+
+#social 
+{
+  transition: all ease-out .6s;
+  text-decoration: none
+}
+
+#social .fab 
+{
+  color: #222222;
+  transition: all ease-out .6s;
+}
+
+#social .fab:hover 
+{
+  transition: all ease-in .1s;
+  color:#A10D0D;
+}

@@ -1,0 +1,58 @@
+.row a 
+{
+  text-decoration: none
+}
+
+.btn-sm 
+{
+  border: solid 1px #a10d0d;
+  background-color: #f1f1f1;
+  font-family: Oswald;
+  font-weight: bold;
+  word-spacing: 1px
+}
+
+.btn-sm:hover 
+{
+  background-color:#222222;
+  color:#f1f1f1;
+}
+
+#social 
+{
+  transition: all ease-out .6s;
+  text-decoration: none
+}
+
+#social .fab 
+{
+  color: #222222;
+  transition: all ease-out .6s;
+}
+
+#social .fab:hover 
+{
+  transition: all ease-in .1s;
+  color:#A10D0D;
+}
+
+input [type=text] 
+{
+  width: 50vw
+}
+
+textarea {
+    max-width:80vw;
+    resize: none;
+    width:80vw;
+}
+
+#link 
+{
+  color:black;
+}
+
+#link:hover 
+{
+  color:#8B2722
+}

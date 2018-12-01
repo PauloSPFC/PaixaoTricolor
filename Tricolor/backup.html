@@ -6,13 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Paixão Tricolor</title>
+    <title>Paixão Tricolor - O site do São Paulo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="estilo2.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Archivo Narrow|Teko|Chakra+Petch:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
   </head>
 
   <body style="overflow-x: hidden;">
@@ -24,31 +25,25 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item borda">
-            <a class="nav-link" href="socio.html">Seja Sócio</a>
+            <a class="nav-link" href="#socio">Seja Sócio</a>
           </li>
           <li class="nav-item borda">
-            <a class="nav-link" href="ingressos.html">Ingressos</a>
+            <a class="nav-link" href="#calendario">Calendário</a>
           </li>
           <li class="nav-item borda">
-            <a class="nav-link" href="calendario.html">Calendário</a>
-          </li>
-          <li class="nav-item borda">
-            <a class="nav-link" href="Noticias.html">Notícias</a>
+            <a class="nav-link" href="#portal">Notícias</a>
           </li>
           <a class="navbar-brand" href="index.html">
             <img src="logo3.png" style="width: 250px; height:auto">
           </a>
           <li class="nav-item borda">
-            <a class="nav-link" href=trofeus.html">Galeria de Troféus</a>
+            <a class="nav-link" href="#trofeus">Galeria de Troféus</a>
           </li>
           <li class="nav-item borda">
-            <a class="nav-link" href="idolos.html">Ídolos</a>
+            <a class="nav-link" href="#idolos">Ídolos</a>
           </li>
           <li class="nav-item borda">
-            <a class="nav-link" href="#transf">Transferências</a>
-          </li>
-          <li class="nav-item borda">
-            <a class="nav-link" href="ingressos.html">Loja</a>
+            <a class="nav-link" href="https://www.saopaulomania.com.br">Loja</a>
           </li>
         </ul>
       </div>
@@ -56,13 +51,13 @@
   
 	<!-- Seu código vai aqui! -->
 	<div class="container col-12" style="background-color: #A10d0d;">
-		<video autoplay>
-	  		<source src="tricolor.mp4" type="video/mp4">
+		<video controls>
+	  		<source src="../tricolor.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
 
 		<div class="container col-12" style="text-align: center;margin-bottom: 30px;padding-bottom: 10px;">
-			<a href="#" type="button" id="sociobotao" class="btn">Associe-se Agora!</a>
+			<a href="http://www.sociotorcedor.com.br/seja-socio/" type="button" id="sociobotao" class="btn">Associe-se Agora!</a>
 		</div> 
 	</div>
 
@@ -80,7 +75,7 @@
 								<img src="../nene2.png" style="max-height: 410px">
 							</div>
 							<div class="col-6">
-								<h2 style="margin-top: 50px;">Nenê</h2>
+								<h2 id="nome" style="margin-top: 50px;">Nenê</h2>
 							</div>	
 						</div>
 						<div class="row">
@@ -95,7 +90,7 @@
 								<img src="../everton2.png" style="max-height: 410px">
 							</div>
 							<div class="col-6">
-								<h2 style="margin-top: 50px;">Éverton</h2>
+								<h2 id="nome" style="margin-top: 50px;">Éverton</h2>
 							</div>	
 						</div>
 					</div>
@@ -107,8 +102,8 @@
 								<img src="../diegosouza3.png" style="max-height: 390px;margin-top: 20px;">
 							</div>
 							<div class="col-6">
-								<h2 style="margin-top: 50px;color:#f1f1f1;padding-left: 20px;">Diego</h2>
-								<h2 style="margin-top: -20px;color:#f1f1f1;padding-left: 20px">Souza</h2>
+								<h2 id="nome" style="margin-top: 50px;color:#f1f1f1;padding-left: 20px;">Diego</h2>
+								<h2 id="nome" style="margin-top: -20px;color:#f1f1f1;padding-left: 20px">Souza</h2>
 							</div>	
 						</div>
 					</div>
@@ -145,9 +140,10 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
-		<h1>Próximos jogos do Clube</h1>
+	<div id="calendario" class="row">
+		<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
+			<h1>Próximos jogos do Clube</h1>
+		</div>
 	</div>
 	<div class="container col-12" style="max-width:1440px;">
 			<div class="row">
@@ -267,8 +263,10 @@
 		</div>
 		<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 100px;color:#f1f1f1;margin-bottom: 30px;">
 		</div>
-		<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
-			<h1>Portal Tricolor</h1>
+		<div id="portal" class="row">
+			<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
+				<h1>Portal Tricolor <i class="far fa-newspaper"></i></h1>
+			</div>
 		</div>
 		<div class="container-fluid col-12">
 			<div class="row">
@@ -286,14 +284,16 @@
 					</div>
 					<div class="row">
 						<div class="container col-12" style="background-color: #A10d0d;text-align: center;">
-							<a href="http://youtube.com/spfctv" target="blank" style="text-decoration: none;"><h2 style="font-size: 35px" id="tportal">Vou jogar no Morumbi!</h2></a>
+							<a href="https://voujogarnomorumbi.com.br/" target="blank" style="text-decoration: none;"><h2 style="font-size: 35px" id="tportal">Vou jogar no Morumbi!</h2></a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container col-12" style="background-color: #D3132C">
 							<div class="row" style="text-align:center">
 								<div class="container col-12">
-									<img src="http://www.sociotorcedor.com.br/wp-content/uploads/2018/10/815332c8-dd9f-44ac-8670-27631c5ef832.jpeg" style="max-width:13vw;height:auto">
+									<a href="https://voujogarnomorumbi.com.br/">
+										<img src="http://www.sociotorcedor.com.br/wp-content/uploads/2018/10/815332c8-dd9f-44ac-8670-27631c5ef832.jpeg" style="max-width:13vw;height:auto">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -306,23 +306,35 @@
 					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 					  </ol>
-					  <div class="carousel-inner" style="max-height: 450px;background-color: #222222">
+					  <div class="carousel-inner" style="max-height: 30.5vw;background-color: #222222">
 					  	<div class="carousel-item active">
-					      <img class="d-block w-100" style="object-fit: contain;max-height:450px;" src="http://www.saopaulofc.net/media/195605/5603_crop_galeria.jpg" alt="Third slide">
+					     <a href="aguirre.html">
+					     	<img class="d-block w-100" style="object-fit: cover;max-height:30.5vw;" src="http://www.saopaulofc.net/media/195605/5603_crop_galeria.jpg" alt="Third slide">
+					     </a>
 					      <div class="carousel-caption d-none d-md-block">
-						    <h2 style="background-color:#222222">Aguirre avalia fase do São Paulo: "É claro que não estamos gostando deste momento"</h2>
+						    <a href="aguirre.html" style="color:white;font-family:Oswald">
+						    	<h2 style="background-color:#222222">Aguirre avalia fase do São Paulo: "É claro que não estamos gostando deste momento"</h2>
+						    </a>
 						  </div>
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" style="object-fit: contain;;max-height:450px;" src="http://www.saopaulofc.net/media/195535/jean_crop_galeria.jpg" alt="First slide">
+					      <a href="jean.html">
+					      	<img class="d-block w-100" style="object-fit: cover;;max-height:30.5vw;" src="http://www.saopaulofc.net/media/195535/jean_crop_galeria.jpg" alt="First slide">
+					      </a>
 					      <div class="carousel-caption d-none d-md-block">
-						    <h2 style="background-color:#222222">De volta e focado no clássico: Fala, Jean!</h2>
+					      	<a href="jean.html" style="color:white;font-family:Oswald">
+					      		<h2 style="background-color:#222222">De volta e focado no clássico: Fala, Jean!</h2>
+					      	</a>						    
 						  </div>
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" style="object-fit: contain;max-height:450px;" src="http://media2.saopaulofc.net/media/195533/DSC_0078_crop_galeria.jpg" alt="Second slide">
+					      <a href="junior.html">
+					      	<img class="d-block w-100" style="object-fit: cover;max-height:30.5vw;" src="http://media2.saopaulofc.net/media/195533/DSC_0078_crop_galeria.jpg" alt="Second slide">
 					      <div class="carousel-caption d-none d-md-block">
+					      </a>
+					      <a href="junior.html" style="color:white;font-family:Oswald">
 					      	<h2 style="background-color:#222222">Júnior mata saudade do Tricolor e relembra majestosos</h2>
+					      </a>
 						  </div>
 					    </div>
 					  </div>
@@ -338,11 +350,17 @@
 					<div class="row" style="margin-top: 30px">
 						<div class="container col-11">
 							<div class="row">
-								<div class="container col-12" style="height:200px;background-image: url(http://www.saopaulofc.net/media/196503/9975_crop_galeria.jpg);">
-									<div class="row" style="margin-top: 150px"></div>
+								<div class="container col-12" style="height:200px;background-image: url(http://www.saopaulofc.net/media/196503/9975_crop_galeria.jpg);background-size: cover">
+									<div class="row" style="height: 150px">
+										<a href="vencer.html">
+											<img src="http://www.saopaulofc.net/media/196503/9975_crop_galeria.jpg" style="width:620px;height:150px;opacity:0.000001">
+										</a>
+									</div>
 									<div class="row">
 										<div class="container col-12" style="background-color: #222222;opacity 0.5;">
-											<h3 style="color:white">Reta final do Brasileiro: "Precisamos vencer!"</h3>
+											<a id="linknot" href="vencer.html" style=" font-family:Oswald;text-align: center">
+												<h3>Reta final do Brasileiro: "Precisamos vencer!"</h3>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -353,11 +371,18 @@
 						<div class="container col-6">
 							<div class="row">
 								<div class="container col-11" style="height:200px;background-image: url(http://www.saopaulofc.net/media/196508/0412_crop_galeria.jpg);background-size: cover;margin-left: 2vw;">
-									<div class="row" style="margin-top: 155px;">
+									<div class="row" style="height: 155px;">
+										<div class="row" style="height: 155px">
+											<a href="g4.html">
+												<img src="http://www.saopaulofc.net/media/196503/9975_crop_galeria.jpg" style="width:620px;height:155px;opacity:0.000001">
+											</a>
+										</div>
 									</div>
 									<div class="row">
 										<div class="container col-12" style="background-color: #222222;">
-											<h6 style="color:white">"Deixamos escapar a chance de entrar no G-4"</h6>
+											<a id="linknot" href="g4.html">
+												<h6>"Deixamos escapar a chance de entrar no G-4"</h6>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -366,11 +391,16 @@
 						<div class="container col-6">
 							<div class="row">
 								<div class="container col-10" style="height:200px;background-image: url(http://media2.saopaulofc.net/media/196488/0022_crop_galeria.jpg);background-size: cover;margin-left: 2vw;">
-									<div class="row" style="margin-top: 155px;">
+									<div class="row" style="height: 155px;">
+										<a href="derrota.html">
+											<img src="http://www.saopaulofc.net/media/196503/9975_crop_galeria.jpg" style="width:570px;height:155px;opacity:0.000001">
+										</a>
 									</div>
 									<div class="row">
 										<div class="container col-12" style="background-color: #222222;">
-											<h6 style="color:white">São Paulo é derrotado pelo Vasco em São Januário</h6>
+											<a id="linknot" href="derrota.html">
+												<h6>São Paulo é derrotado pelo Vasco em São Januário</h6>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -381,7 +411,11 @@
 				<div class="col-3">
 						<div class="row">
 							<div class="container col-12" style="background-color: #A10d0d;text-align: center;">
-								<h1 style="font-size:40px;margin-bottom: 28px;">Loja <i class="fas fa-shopping-cart"></i></h1>
+								<a href="https://www.adidas.com.br/">
+									<h1 style="font-size:40px;margin-bottom: 28px;">Loja 
+										<i class="fas fa-shopping-cart"></i>
+									</h1>
+								</a>
 							</div>
 						</div>
 						<div class="row">
@@ -416,7 +450,7 @@
 															<div class="container col-12" id="compre" style="text-align:left">
 																<div class="row">
 																	<div class="col">
-																		<a href="#" id="textocompre" style="font-size:1.8vw;font-family: rockwell;text-decoration: none;white-space: nowrap;">Compre agora! <i class="fas fa-shopping-basket"></i></a>
+																		<a href="https://www.adidas.com.br/camisa-sao-paulo-i/DZ5626.html?cm_mmc=AdieSEM_Google-_-GoogleProductAds-_-Shopping-_-DZ5626-0001-_-dv%3AeCom-_-cn%3APLA-_-pc%3Across_category&cm_mmc=AdieSEM_Feeds-_-GoogleProductAds-_-Teste-UniversalShopping-adidas-_-Grupo%2Bde%2Ban%C3%BAncios-_-PRODUCT_GROUP-_-&cm_mmc1=BR&cm_mmc2=adidas-LAM-eCom-PLA-Futebol-Other-None-BR-LATAM-eCom-Paid_Search&dfw_tracker=17326-&-_-ds_kid=92700038650346169-_-&-_-ds_agid=58700004594501427-_-&cm_mmca1=BR&cm_mmca2=&gclid=Cj0KCQiA_4jgBRDhARIsADezXcgdav3VRUMyIlSBEhmqBDLpNLi7ETKHbTCJw4IuQ3V-K_oWdlJUA0QaAktSEALw_wcB&gclsrc=aw.ds" id="textocompre" style="font-size:1.8vw;font-family: rockwell;text-decoration: none;white-space: nowrap;">Compre agora! <i class="fas fa-shopping-basket"></i></a>
 																	</div>
 																	<div class="col-3"></div>
 																</div>
@@ -457,7 +491,7 @@
 															<div class="container col-12" id="compre" style="text-align:left">
 																<div class="row">
 																	<div class="col">
-																		<a href="#" id="textocompre" style="font-size:1.8vw;font-family: rockwell;text-decoration: none;white-space: nowrap;">Compre agora! <i class="fas fa-shopping-basket"></i></a>
+																		<a href="https://www.adidas.com.br/camisa-sao-paulo-ii/DZ5620.html?cm_mmc=AdieSEM_Google-_-GoogleProductAds-_-Shopping-_-DZ5620-0002-_-dv:eCom-_-cn:PLA-_-pc:cross_category&cm_mmc1=BR&cm_mmc2=adidas-LAM-eCom-PLA-Futebol-Other-None-BR-LATAM-eCom-Paid_Search&dfw_tracker=17326-&cm_mmc=AdieSEM_Feeds-_-GoogleProductAds-_-Teste-UniversalShopping-adidas-_-Grupo+de+an%C3%BAncios-_-PRODUCT_GROUP-_-&-_-ds_kid=92700038650346169-_-&-_-ds_agid=58700004594501427-_-&-_-dv:eCom&cm_mmca1=BR&cm_mmca2=&gclid=Cj0KCQiA_4jgBRDhARIsADezXci_6iJdFrdjZL_YOEnmYdJfgpeb-1tm4kfs3k0OkwR5fiROh295egAaAifQEALw_wcB&gclsrc=aw.ds" id="textocompre" style="font-size:1.8vw;font-family: rockwell;text-decoration: none;white-space: nowrap;">Compre agora! <i class="fas fa-shopping-basket"></i></a>
 																	</div>
 																	<div class="col-3"></div>
 																</div>
@@ -480,13 +514,13 @@
 						<div class="container col-12" style="text-align:center">
 							<div class="row" style="margin-top: 5px">
 								<div class="col-4">
-									<i class="fab fa-facebook-square" style="font-size: 4em"></i>
+									<a id="social" href="http://www.facebook.com/saopaulofc"><i class="fab fa-facebook-square" style="font-size: 4em"></i></a>
 								</div>
 								<div class="col-4">
-									<i class="fab fa-twitter-square" style="font-size: 4em"></i>
+									<a id="social" href="http://twitter.com/saopaulofc"><i class="fab fa-twitter-square" style="font-size: 4em"></i></a>
 								</div>
 								<div class="col-4">
-									<i class="fab fa-instagram" style="font-size: 4em;"></i>
+									<a id="social" href="http://instagram.com/saopaulofc"><i class="fab fa-instagram" style="font-size: 4em;"></i></a>
 								</div>
 							</div>
 						</div>
@@ -510,7 +544,11 @@
 					</div>
 					<div class="row" style="margin-bottom: 2vw">
 						<div id="contnoticia" class="container col-12" style="text-align: center;">
-							<h3 id="noticia" style="color:#f1f1f1;margin-top: 0.5vw;font-family: Oswald">Mais Notícias <i class="fas fa-arrow-alt-circle-right"></i></h3>
+							<a href="noticia.html">
+								<h3 id="noticia" style="color:#f1f1f1;margin-top: 0.5vw;font-family: Oswald">Mais Notícias 
+									<i class="fas fa-arrow-alt-circle-right"></i>
+								</h3>
+							</a>	
 						</div>
 					</div>
 				</div>
@@ -520,9 +558,9 @@
 		<div class="row">
 			<div class="container col-12" style="background-color: #a10d0d;height:100px;margin-bottom: 30px"></div>
 		</div>
-		<div class="row">
+		<div id="socio" class="row">
 			<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
-				<h1>A Cara do ST <i class="fas fa-camera"></i></h1><br>
+				<h1>Sócio SPFC <i class="fas fa-medal"></i></h1><br>
 			</div>
 		</div>
 		<div class="row">
@@ -533,30 +571,30 @@
 							<div class="col-6">
 								<div class="container col-5"></div>
 								<div class="container col-7">
-									<div class="row" style="margin-top: 5vw"></div>
-									<div class="row" style="max-height: 20vw;max-width:30vw;background-color: #222222">
+									<div class="row" style="margin-top: 6vw"></div>
+									<div class="row" style="height: 25vw;width:35vw;background-color: #222222">
 										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 										  <div class="carousel-inner">
 										    <div class="carousel-item active">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10766579488_IMG_6200.JPG" alt="First slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10766579488_IMG_6200.JPG" alt="First slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10766652096_IMG_6210.JPG" alt="Second slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10766652096_IMG_6210.JPG" alt="Second slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765769520_IMG_6213.JPG" alt="Third slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765769520_IMG_6213.JPG" alt="Third slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765766112_IMG_6201.JPG" alt="Third slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765766112_IMG_6201.JPG" alt="Third slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765775136_IMG_6203.JPG" alt="Third slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765775136_IMG_6203.JPG" alt="Third slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765786384_IMG_6207.JPG" alt="Third slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765786384_IMG_6207.JPG" alt="Third slide">
 										    </div>
 										    <div class="carousel-item">
-										      <img style="max-height: 20vw;max-width:30vw;object-fit: contain" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765796384_IMG_6217.JPG" alt="Third slide">
+										      <img style="height: 25vw;width:35vw;object-fit: cover" class="d-block w-100" src="http://www.sociotorcedor.com.br/wp-content/gallery/26-11-2018-spfc-x-sport-camarote/10765796384_IMG_6217.JPG" alt="Third slide">
 										    </div>
 										  </div>
 										  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -577,59 +615,95 @@
 									<div class="container col-12">
 										<div class="row">
 											<div class="container col-12">
-												<div class="row" style="margin-top: 95px"></div>
+												<div class="row" style="margin-top: 2.9vw"></div>
 												<div class="row">
 													<div class="container col-12">
-														<div class="col-6">
 															<div class="row">
-																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2018/11/10741628864_IMG_6104-300x200.jpg);width:300px;height: 200px;background-size: cover">
-																	<div class="row" style="margin-top: 120px"></div>
+																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2018/11/10741628864_IMG_6104-768x512.jpg);width:15vw;height: 14vw;background-size: cover">
+																	<div class="row" style="margin-top: 8.7vw"></div>
 																	<div class="row">
-																		<div class="container col-8" style="background-color: #a10d0d">
-																			<h3 style="font-size: 20px;font-family: Chakra Petch;color:white;font-weight:bold">
-																				Matchday Experience
-																			</h3>
+																		<div id="imagens" class="container col-7" >
+																			<a href="http://www.sociotorcedor.com.br/galeria-de-fotos#matchday_galeria"><h3 style="font-size: 20px;font-family: Chakra Petch;	color:white;font-weight:bold">
+																					Matchday <br>Experience
+																				</h3>
+																			</a>
 																		</div>
-																		<div class="col-4"></div>
+																		<div class="col-5"></div>
 																	</div>
 																</div>
-																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2018/11/10741870976__MG_6169-300x200.jpg);background-size:300px 200px">
-																	<div class="row" style="margin-top: 120px"></div>
+																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2018/11/10741870976__MG_6169-768x512.jpg);background-size:cover">
+																	<div class="row" style="margin-top: 8.7vw"></div>
 																	<div class="row">
-																		<div class="container col-8" style="background-color: #a10d0d">
-																			<h3 style="font-size: 20px;font-family: Chakra Petch;color:white;font-weight:bold">
-																				Zona <br>Mista
-																			</h3>
+																		<div id="imagens" class="container col-4">
+																			<a href="http://www.sociotorcedor.com.br/galeria-de-foto#zona_mista_galeria">
+																				<h3 style="font-size: 20px;font-family: Chakra Petch;color:white;font-weight:bold">
+																					Zona <br>Mista
+																				</h3>
+																			</a>
 																		</div>
-																		<div class="col-4"></div>
+																		<div class="col-8"></div>
 																	</div>
 																</div>
 															</div>
-														</div>
 													</div>	
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div class="container col-12">
+												<div class="row" style="margin-top: 2.4vw"></div>
+												<div class="row">
+													<div class="container col-12">
+															<div class="row">
+																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2018/11/10766658864_IMG_6214-768x512.jpg);width:15vw;height: 14vw;background-size: cover">
+																	<div class="row" style="margin-top: 8.7vw"></div>
+																	<div class="row">
+																		<div id="imagens" class="container col-7" style="">
+																			<a href="http://www.sociotorcedor.com.br/galeria-de-fotos#camarote_galeria" >
+																				<h3 style="font-size: 20px;font-family: Chakra Petch;	color:white;font-weight:bold">
+																					Camarote <br>Tricolor
+																				</h3>
+																			</a>
+																		</div>
+																		<div class="col-5"></div>
+																	</div>
+																</div>
+																<div class="container col-5" style="background-image: url(http://www.sociotorcedor.com.br/wp-content/uploads/2016/12/IMG_1226-768x451.jpg);background-size:cover">
+																	<div class="row" style="margin-top: 8.7vw"></div>
+																	<div class="row">
+																		<div id="imagens" class="container col-4">
+																			<a href="http://www.sociotorcedor.com.br/galeria-de-fotos#to_em_casa_galeria">
+																				<h3 style="font-size: 20px;font-family: Chakra Petch;color:white;font-weight:bold">
+																					Tô em <br>casa
+																				</h3>
+																			</a>
+																		</div>
+																		<div class="col-8"></div>
+																	</div>
+																</div>
+															</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="margin-top: 4vw"></div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="container col-6" style="background-color: #a10d0d;height:100px;margin-bottom: 30px">
-				<div class="row" style="margin-top: 10px"></div>
-				<div class="row">
-					<div class="container col-7" style="background-color: white;text-align:center">
-						<h3 style="color:black;font-size: 60px;font-family: Oswald">Quero ser sócio</h3>
-					</div>
-				</div>
+			<div class="container col-12" style="background-color: #a10d0d;height:100px;margin-bottom: 30px">
 			</div>
 		</div>
-		<div class="row">
+		<div id="trofeus" class="row">
 			<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
 				<h1>Galeria de Troféus <i class="fas fa-trophy"></i></h1><br>
 			</div>
@@ -643,7 +717,7 @@
 								<a href="#" class="conteudo">
 								  <div class="titulo"></div>
 								  <div class="imagem">
-								    <h1>Mundial de Clubes FIFA</h1>
+								    <h1 style="white-space: nowrap">Mundial de Clubes FIFA</h1>
 								    <span style="font-size: 1.5em"><i class="fas fa-trophy"> </i> 3 Títulos</span>
 								    <span style="font-size: 1.5em"> <i class="fas fa-calendar-alt"> </i> 1992,1993,2005</span>
 								  </div>
@@ -682,7 +756,7 @@
 								<a href="#" class="conteudo">
 								  <div class="titulo" style="background-color: #222222"></div>
 								  <div class="imagem">
-								    <h1>CONMEBOL Libertadores</h1>
+								    <h1 style="white-space: nowrap">CONMEBOL Libertadores</h1>
 								    <span style="font-size: 1.5em"><i class="fas fa-trophy"> </i> 3 Títulos</span>
 								    <span style="font-size: 1.5em"> <i class="fas fa-calendar-alt"> </i> 1992, 1993 e 2005</span>
 								  </div>
@@ -697,7 +771,7 @@
 								<a href="#" class="conteudo">
 								  <div class="titulo" style="background-color: #222222"></div>
 								  <div class="imagem">
-								    <h1>Campeonato Brasileiro</h1>
+								    <h1 style="white-space: nowrap">Campeonato Brasileiro</h1>
 								    <span style="font-size: 1.5em"><i class="fas fa-trophy"> </i> 6 Títulos</span>
 								    <span style="font-size: 1.5em"> <i class="fas fa-calendar-alt"> </i> 1977, 1986, 1991, 2006, 2007 e 2008</span>
 								  </div>
@@ -736,7 +810,7 @@
 								<a href="#" class="conteudo">
 								  <div class="titulo" style="background-color: #a10d0d"></div>
 								  <div class="imagem">
-								    <h1>Florida International PlayOff Cup</h1>
+								    <h1 style="white-space: nowrap">Florida International Cup</h1>
 								    <span style="font-size: 1.5em"><i class="fas fa-trophy"> </i> 1 Título</span>
 								    <span style="font-size: 1.5em"> <i class="fas fa-calendar-alt"> </i> 2017</span>
 								  </div>
@@ -752,51 +826,1336 @@
 			<div class="container col-6" style="background-color: #222222;height:100px;margin-bottom: 30px"></div>
 			<div class="container col-6" style="background-color: #a10d0d;height:100px;margin-bottom: 30px"></div>
 		</div>
-		<div id="transf" class="row">
+		<div id="idolos" class="row">
 			<div class="container col-12" style="background-color: #222222;text-align: center;height: 100px;color:#222222;">
-				<h1>Transferências</h1><br>
+				<h1>Ídolos <i class="fas fa-star"></i></h1><br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
-				<h1 style="font-size:30px;padding-top: 0.3vw;">Chegando <i class="fas fa-home"></i></h1>
+				<h1 style="font-size:30px;padding-top: 0.3vw;">Goleiros 
+					<i class="fas fa-hand-paper"></i>
+				</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="container-fluid col-12">
+			<div class="container col-12">
 				<div class="row">
 					<div class="container col-12">
 						<div class="row">
-							<div class="col-3">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
 								<div class="row">
 									<div class="container col-12">
-										<a href="http://totalacesso.com.br/pagina/saopaulofutebolclube" target="blank" class="principal">
-										  <div class="fundojog">
-										  	<img src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/92/22/9857e259487bcd0.jpg"/>
-										  </div>
-										  <div class="times">
-										  	<div id="timevem">
-										  		<img src="http://chinabrasilfutebol.com.br/system/players/avatars/000/000/572/original/9206186470e6604bd043fcb53485433215a9b458.png?1500559187">
-										  	</div>
-										  	<div id="saopaulofora">
-										  		<img src="https://www.zerozero.pt/img/logos/equipas/83467_imgbank.png">
-										  	</div>
-										  </div>
-										  <div class="sinal">
-										  	<i style="color:green" class="fas fa-check"></i>
-										  </div>
-										  <div class="titulo"></div>
-										  <div class="fototitulo">
-										    <h3 style="font-size: 17px;font-weight: bold;text-align: center">Hernanes</h3>
-										    <span><i class="far fa-calendar-alt"></i> 24 de novembro, 18H00</span>
-										    <span><i class="fas fa-map-marker-alt"></i> São Januário</span>
-										    <span id="botaoingresso">Comprar Ingresso <i class="fas fa-ticket-alt" style="font-size:1.1em"></i></span>
-										  </div>
-										</a>
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/176764/rc-idolos.jpg);height: 18.7vw;max-height:18.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Rogério Mücke Ceni (Rogério Ceni)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 1.95vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														Goleiro. Artilheiro. M1TO. São-Paulino.
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Maior goleiro artilheiro do mundo, atleta exemplar, campeão mundial com a Seleção Brasileira, bicampeão mundial e da Libertadores, tricampeão brasileiro, capitão e líder incondicional do esquadrão tricolor, Rogério Ceni é a síntese do espírito são-paulino: competente, exigente, obstinado e vencedor.
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1990 - 2015
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		132 Gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		1237 Jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2310/zetti.jpg);height: 18.7vw;max-height:18.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Armelino Donizetti Quagliatto (Zetti)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 3.85vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Consagrado
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Integrou a seleção Brasileira campeã Mundial na Copa de 94. Quando veio do Palmeiras, em 90, era um goleiro comum. Quase ninguém previa que ele iria se consagrar no SPFC, como acabou ocorrendo.
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1990 - 1996
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		0 gol
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		432 Jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Zagueiros
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2427/Lugano.jpg);height: 18.7vw;max-height:18.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Diego Alfredo Lugano Morena (Lugano)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 1.95vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														Prazer, Diego. Sobrenome, Raça
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Desconhecido, sua contratação não fora aprovada pelo então técnico, Oswaldo de Oliveira, passando a ser conhecido como "O Jogador do Presidente". Aos poucos, jogando com uma grande vontade e espírito de luta, Lugano conquistou a torcida são-paulina. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2003 - 2017
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		13 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		213 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2222/dario%20pereyra.jpg);height: 18.7vw;max-height:18.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Dario Pereyra</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 1.9vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														Era craque na bola e na raça, como um bom jogador uruguaio
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Desconhecido, sua contratação não fora aprovada pelo então técnico, Oswaldo de Oliveira, passando a ser conhecido como "O Jogador do Presidente". Aos poucos, jogando com uma grande vontade e espírito de luta, Lugano conquistou a torcida são-paulina. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1977 - 1988
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		37 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		453 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Laterais
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/17292/cicinho2.png);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw"> Cícero João de Cezare (Cicinho)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														Lateral extremamente ofensivo, um verdadeiro ala
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Cicinho fez parte do esquadrão são-paulino de 2005, Campeão da Libertadores e do Mundo. Além do apoio ao ataque, outra característica marcante do jogador eram os chutes potentes de fora da área. Para os tricolores, dois gols de Cicinho, nesse estilo, são inesquecíveis: ambos de falta contra o Palmeiras, pela Taça Libertadores da América de 2005 (eliminando o rival da competição). 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2004 - 2010
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		21 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		151 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2216/cafu-terceiroabaixado.jpg);height: 18.7vw;max-height:18.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw"> Marcos Evangelista de Moraes (Cafu)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 1.95vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														Um dos maiores laterais direitos da história do futebol
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Foi o lateral-direito que mais fez gols no São Paulo, não só pela excelência do seu futebol e do seu preparo físico, como também porque exerceu mais funções ofensivas do que outros, em atendimentos aos esquemas táticos mais modernos. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1989 - 1994
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		38 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		273 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Volantes
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/17278/hernanes1.png);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Anderson Hernanes de Carvalho Viana Lima (Hernanes)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Profeta
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Formado nas categorias de base do clube, o polivalente Hernanes atuou em várias posições em sua carreira, de lateral a atacante. No time principal do Tricolor, após começar jogando à beira do campo, foi encaixado na região central, como volante, por Muricy Ramalho. Seu desempenho rendeu ao São Paulo a conquista de dois Campeonatos Brasileiros. Ao jogador, convocações a Seleção Brasileira e a camisa nº 10 do Tricolor. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2004 - 2017
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		47 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		242 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/17281/mineiro3.png);height: 18.8vw;max-height:18.8vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Carlos Luciano da Silva (Mineiro)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 2vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Herói do Tri
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Gaúcho de Porto Alegre, Mineiro se consagrou no Tricolor pelo gol sobre o Liverpool, na final do Mundial de Clubes de 2005. Seu futebol, fôlego e vigor, porém, já bastariam para enquadrá-lo entre os melhores de todos os tempos. Exímio marcador, do gênero incansável, ainda arriscava avanços ao ataque e chutes de longas distâncias. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2005-2006
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		14 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		126 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Meias
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2277/rai.jpg);height: 18.8vw;max-height:18.8vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Raí Vieira de Oliveira (Raí)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 2vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Símbolo Tricolor
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Veio do Botafogo de Ribeirão Preto em 87 e demorou pouco para brilhar. Tinha o estigma de jogador lento. Tornou-se o capitão e virou uma espécie de símbolo do time que ganhou quase tudo em 91, 92 e 93. Raí jogou na França e voltou ao tricolor em 1998 para encerrar sua carreira em 2000. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1987 - 2000
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		128 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		395 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/17279/kaka1.png);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Ricardo Izecson dos Santos Leite (Kaká)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														A Autêntica Jóia Tricolor
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Kaká foi lapidado desde criança para ser uma verdadeira potência entre os atletas. Bom caráter, inteligente, forte, ágil, veloz... Poucas são as características positivas a um jogador que ele não possui. Em suas primeiras partidas no Tricolor, de cara foi campeão, marcando dois gols na final da competição. Foi Campeão do Mundo em 2002 pela Seleção e escolhido o Melhor do Mundo pela FIFA, em 2007. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2001 - 2014
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		51 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		155 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Atacantes
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/17280/luisfabiano2.png);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Luís Fabiano Clemente (Luís Fabiano)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Goleador Fabuloso
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Luís Fabiano é  o 3º maior artilheiro da história do São Paulo, com 212 gols. Foi decisivo e comemorou os gols da vitória do Brasil sobre o Uruguai no emblema são-paulino! Recontratado em 2011, com uma festa inesquecível no estádio do Tricolor, Luis Fabiano continou a marcar muitos gols, fato que o levou a assumir a artilharia máxima do clube em vários critérios.
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		2001 - 2015
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		212 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		352 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2293/serginho.jpg);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Sérgio Bernardino (Serginho Chulapa)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Gigante Artilheiro
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Era insuperável quando partia para o gol. Desengonçado, parecia que ia cair, mas nunca caía. Usava os braços e o corpo também com uma habilidade incrível. Alto, fazia ainda muitos gols de cabeça. Era bom também para bater faltas e pênaltis. Tinha uma empatia especial com a torcida porque sabia provocar os adversários. É o maior artilheiro da história do SPFC. Foi centroavante titular do Brasil na de 82. 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1973 - 1982
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		242 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		399 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/35061/muller.jpg);height: 19.5vw;max-height:19.5vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Luis Antônio Correia da Costa (Müller)</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;padding-bottom: 0.08vw">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Gênio Velocista
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Muller foi um jogador fundamental nas conquistas dos dois primeiros títulos mundiais que conquistamos. Fez uma jogada excepcional contra o Barcelona, em 92, antes de cruzar para Raí empatar o jogo e fez o gol da vitória contra o Milan em 93. Foi importante também em várias outras conquistas, graças não só a uma diferenciada velocidade, mas, principalmente, a uma inteligência incrível, dentro do campo. Disputou três Copas do Mundo (1986 a 1994). 
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-calendar-alt"> </i>
+																		1984 - 1996
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-futbol"> </i>
+																		160 gols
+																	</span>
+																</div>
+																<div class="row">
+																	<span id="dadosid">
+																		<i class="fas fa-stopwatch"></i>
+																		386 jogos
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;text-align: center;height: 50px;color:#222222;">
+				<h1 style="font-size:30px;padding-top: 0.3vw;">
+					Técnicos
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2298/tele.jpg);height: 19vw;max-height:19vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Telê Santana</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														O Eterno Telê
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														Este espaço é pouco para descrever tudo o que este grande técnico fez pelo clube. Telê teve duas passagens pelo Tricolor (1973 e 1990-1996), e é o técnico mais vencedor da história são-paulina. Ao todo foram dez títulos oficiais conquistados, que elevaram o nome do São Paulo FC a um patamar nunca antes atingido. Eterno ídolo da torcida, que até hoje canta seu nome nos jogos do time.
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<div class="col-2">
+																		<div class="row">
+																			<span id="dadosid">
+																				<i class="fas fa-calendar-alt"> </i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-10">
+																		<div class="row">
+																			<span id="dadosid">
+																				1973<br>
+																				<span id="dadosid">
+																					1990 / 1996
+																				</span><br>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-2">
+																		<div class="row">
+																			<span id="dadosid">
+																				<i class="fas fa-trophy"></i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-10">
+																		<div class="row">
+																			<span id="dadosid">
+																				10 Títulos
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #a10d0d;height:0.7vw;margin-bottom: 0.5vw"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12" style="background-color: #222222;height:0.7vw;"></div>
+		</div>
+		<div class="row">
+			<div class="container col-12">
+				<div class="row">
+					<div class="container col-12">
+						<div class="row">
+							<div class="col-2" style="height: 18.7vw;max-height:18.7vw">
+								<div class="row">
+									<div class="container col-12">
+										<div class="row">
+											<div id="idol" class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/2260/Muricy.jpg);height: 19.7vw;max-height:19.7vw;background-size: cover;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-10">
+								<div class="row">
+									<div class="container col-12" >
+										<div class="row">
+											<span id="nomeid" style="margin-left: 1vw">Muricy Ramalho</span>
+										</div>
+									</div>
+								</div>
+								<div class="row" style=" ">
+									<div class="container col-12" style="background-color: #222222;">
+										<div class="row">
+											<div class="col-10">
+												<div class="row">
+													<p style="color:white;font-family: Oswald;font-size: 2vw;margin-left: 1vw">
+														A Prata da Casa
+													</p>
+													<p style="color:white;font-family: Oswald;font-size: 1.5vw;margin-left: 1vw;letter-spacing: 0.05vw">
+														 Muricy foi auxiliar de Telê Santana nos anos 90. Em 2006, levou o São Paulo FC a um feito inédito na história do clube - um tricampeonato seguido, com um sabor todo especial por ser um Tricampeonato Brasileiro (2006, 2007 e 2008). Com campanhas épicas, variando de conquistas seguras obtidas com várias rodadas de antecipação à façanha de vencer um campeonato após matemáticos lançarem apenas 1% de chances de triunfo.
+													</p>
+												</div>
+											</div>
+											<div class="col-2">
+												<div class="row">
+													<div class="container col-12">
+														<div class="row" style="height:2.7vw">
+															
+														</div>
+														<div class="row">
+															<div class="container col-12" style="margin-left: 1vw">
+																<div class="row">
+																	<div class="col-2">
+																		<div class="row">
+																			<span id="dadosid">
+																				<i class="fas fa-calendar-alt"> </i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-10">
+																		<div class="row">
+																			<span id="dadosid">
+																				1993<br>
+																				<span id="dadosid">
+																					1996 / 1997
+																				</span><br>
+																				<span id="dadosid">
+																					2006 / 2009
+																				</span><br>
+																				<span id="dadosid">
+																					2013 / 2015
+																				</span><br>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-2">
+																		<div class="row">
+																			<span id="dadosid">
+																				<i class="fas fa-trophy"></i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-10">
+																		<div class="row">
+																			<span id="dadosid">
+																				5 Títulos
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-12" style="background-color: #a10d0d;height:20px;margin-top: 3vw"></div>
+		<div class="container col-12" style="background-color: #f1f1f1;height:20px;"></div>
+		<div class="container col-12" style="background-color: #222222;height:20px;"></div>
+		<div class="container col-12" style="background-color: #ffffff;height:300px;">
+			<div class="row">
+				<div class="container col-12">
+					<div class="row">
+						<div class="col-1"></div>
+						<div class="container col-10">
+							<div class="row">
+								<div class="container col-12" style="background-image: url(http://www.saopaulofc.net/media/3094698/patrocinadores_home.png);background-size:contain;height:12vw;width:800vw">
+											
+								</div>
+							</div>
+							<div class="row">
+								<h5 style="font-family:Oswald;word-spacing: 0.5px;color:#707070;font-size: 1.4vw">NEWSLETTER</h5>
+							</div>
+							<div class="row">
+								<div class="col-4">
+									<div class="row">
+										<h5 style="font-family:Oswald;word-spacing: 0.5px;color:#939292;font-size: 1vw">Digite seu e-mail para receber nossa newsletter</h5>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<input type="text" name="email" size="30">
+								<div class="btn btn-sm" style="">OK</div>
+							</div>
+							<div class="row" style="margin-top: 2vw">
+								<div class="col-6">
+									<div class="row">
+										<p style="font-size: 1vw;color:#939292">© SÃO PAULO FUTEBOL CLUBE - 
+											<a href="http://www.saopaulofc.net/termo-de-uso-e-politica-de-privacidade" style="text-decoration-color: #939292;color:#939292">TERMO DE USO E POLITICA DE PRIVACIDADE</a>
+										</p>
+									</div>
+								</div>
+								<div class="col-4"></div>
+								<div class="col-2">
+									<div class="row" style="margin-bottom: 1.7vw">
+										<div class="col-4">
+											<div class="row">
+												<a id="social" href="http://www.facebook.com/saopaulofc">
+													<i class="fab fa-facebook-square" style="font-size: 2.5em"></i>
+												</a>
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="row">
+												<a id="social" href="http://twitter.com/saopaulofc"><i class="fab fa-twitter-square" style="font-size: 2.5em"></i>
+												</a>
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="row">
+												<a id="social" href="http://instagram.com/saopaulofc"><i class="fab fa-instagram" style="font-size: 2.5em"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-1"></div>
 					</div>
 				</div>
 			</div>
